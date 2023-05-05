@@ -1,0 +1,4 @@
+1. Устанавливаешь библиотеки: requests, speedtest, tempfile, pillow, telebot, platform, psutil, socket
+2. меняешь в config.py значение TOKEN (взять его можно тут https://t.me/BotFather)
+3. Запускаешь main.py 
+
