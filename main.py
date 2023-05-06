@@ -33,15 +33,6 @@ def check_ineternet_connection(call):
         mes = bot.send_message(call.message.chat.id, '<b>Подлючаюсь к сети пк...</b>', parse_mode='HTML',
                                reply_markup=back)
         time.sleep(3)
-        hostname = socket.gethostname()
-        ip_address = socket.gethostbyname(hostname)
-        servers = []
-        threads = None
-        s = speedtest.Speedtest()
-        s.get_servers(servers)
-        s.download(threads=threads)
-        results_dict = s.results.dict()
-        download_speed = round(results_dict["download"] / 1000000, 2)
         mes_2 = bot.send_message(call.message.chat.id, '<b> Вычисляю скорость интернета...</b>',
                                            parse_mode='HTML', reply_markup=back)
         time.sleep(3)
